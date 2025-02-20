@@ -1,3 +1,13 @@
+---
+//import "@fontsource-variable/onest"
+
+import Header from "../components/Header.astro"
+// import Footer from "../components/Footer.astro"
+import { ViewTransitions } from "astro:transitions"
+
+
+const { description, title } = Astro.props
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,6 +18,7 @@
 		<title>Astro Basics</title>
 	</head>
 	<body>
+		<Header />
 		<slot />
 	</body>
 </html>
